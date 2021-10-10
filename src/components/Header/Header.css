@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Whitney Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Whitney Medium'), url('../../assets/fonts/whitneymedium.woff') format('woff');
+    }
+header{
+    font-family: 'Whitney Medium';
+    background-color: #0747a6;
+}
+nav{
+    width: 95%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+.nav-brand{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    flex-basis: 30%;
+    min-width: 140px;
+    max-width: 140px;
+    position: relative;
+}
+#freight{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 90%;
+}
+
+.header-search{
+    padding: .4rem .8rem;
+    width: 80%;
+    background-color: #1556b8f8;
+    border: none;
+    opacity: .7;
+}
+#search, #nav-buttons{
+    flex-basis: 50%;
+}
+#search{
+    width: 100%;
+}
+#nav-buttons{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+}
+.green-btn{
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #3bb13b;
+    border: 1px solid #3bb13b;
+}
+.transparent-btn{
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    #nav-buttons{
+        justify-content: center;
+    }
+    #search{
+        margin: 0 auto;
+    }
+    input[type='text']{
+        width: 100%;
+    }
+    .nav-brand{
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 400px){
+    #nav-buttons{
+        flex-direction: column;
+    }
+    .green-btn, .transparent-btn{
+        width: 100%;
+    }
+}
+
